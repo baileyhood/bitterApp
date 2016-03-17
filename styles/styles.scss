@@ -1,3 +1,73 @@
+body {
+  font-family: 'Inconsolata', ;
+}
+h1 {
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  color: #498E8D;
+  padding: 15px;
+  font-size: 4em;
+
+}
+.inactive {
+  display: none;
+}
+.add-message-container {
+  margin: 0 auto;
+  display: block;
+  width: 40%;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #F8F8F8;
+  padding: 29px;
+  border-radius: 12px;
+  border: 1px solid #E8E8E8;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.submit-post-button{
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+article {
+  margin: 0 auto;
+  width: 40%;
+  border: 1px solid #E8E8E8;
+  border-radius: 12px;
+  padding: 29px;
+  margin-bottom: 15px;
+}
+
+article h2 h3 {
+}
+
+.user , .date  {
+  display: inline-block;
+  color: #A6A6A6;
+  font-size: 1em;
+}
+
+.user {
+  font-weight:700;
+}
+
+.post-message {
+  font-size: 2em;
+}
+
+.button-container {
+  margin-bottom: 15px;
+}
+
 .inactive {
   display: none;
 }
