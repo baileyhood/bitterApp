@@ -13476,7 +13476,7 @@ addMessage: [
 ].join(""),
 
 editMessage: [
-  '<div class = "edit-message-container inactive">',
+  '<div class = "edit-message-container">',
   '<form class = "">',
   '<input class = "user-edit form-control" type="text" placeholder="" value="<%=user%>">',
   '<input class = "date-edit form-control" type="text" placeholder="Enter Date" value="<%= date %>">',
