@@ -4,7 +4,7 @@ var _ = require('underscore');
 var BitterModel = require('./bitterModel');
 
 module.exports = Backbone.View.extend ({
-    el: '.main-container',
+    el: '.add-message-container',
     template: _.template(tmpl.addMessage),
     events: {
       'click .submit-post-button' : 'addPost'
