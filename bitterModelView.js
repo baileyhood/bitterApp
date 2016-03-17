@@ -7,8 +7,7 @@ module.exports = Backbone.View.extend ({
   template: _.template(tmpl.bitterTmpl),
   editTemplate: _.template(tmpl.editMessage),
   initialize: function () {
-    this.listenTo(this.collection, 'update', this.addAll);
-    this.listenTo(this.collection, 'change', this.addAll);
+    this.listenTo(this.model, 'change', this.addAll);
   },
   render: function(){
       var markup = this.template(this.model.toJSON());
@@ -17,10 +16,21 @@ module.exports = Backbone.View.extend ({
   },
   events: {
     'click .edit-button' : 'toggleEdit',
-    'click .delete-button' : 'deletePost'
+    'click .delete-button' : 'deletePost',
+    'click .submit-edit-button' : 'editPost'
   },
   toggleEdit: function () {
     this.$el.append(this.editTemplate(this.model.toJSON())).toggleClass();
+  },
+
+  editPost: function (event) {
+    event.preventDefault();
+    console.log("Edit button is being pressed");
+    this.model.set({
+      user: this.$el.find('.user-edit').val(),
+      date: this.$el.find('.date-edit').val(),
+      postMessage: this.$el.find('.post-edit').val()
+    });
   },
 
   deletePost: function () {
