@@ -1,7 +1,7 @@
 module.exports = {
 bitterTmpl: [
-    '<h4 class= "user">   <%=user%> | </h2>',
-    "<h4 class = 'date' > <%= date %></h3>",
+    '<h4 class= "user">   <%=user%> |  </h2>',
+    "<h4 class = 'date'>  <%= date %></h3>",
     "<div class = 'post-container'>",
         '<p class = "post-message" > <%= postMessage %> </p>',
     "</div>",
