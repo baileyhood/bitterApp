@@ -20,7 +20,7 @@ module.exports = Backbone.View.extend ({
     'click .submit-edit-button' : 'editPost'
   },
   toggleEdit: function () {
-    this.$el.append(this.editTemplate(this.model.toJSON())).toggleClass();
+    this.$el.append(this.editTemplate(this.model.toJSON()));
   },
 
   editPost: function (event) {
@@ -31,6 +31,7 @@ module.exports = Backbone.View.extend ({
       date: this.$el.find('.date-edit').val(),
       postMessage: this.$el.find('.post-edit').val()
     });
+    this.model.save();
   },
 
   deletePost: function () {

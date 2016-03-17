@@ -1,0 +1,21 @@
+{
+  "name": "bitters",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "William Hood <williamhood@Williams-MacBook-Pro-2.local>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/baileyhood/bitterApp",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

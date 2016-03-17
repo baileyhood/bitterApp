@@ -7,8 +7,8 @@ bitterTmpl: [
         '<p class = "post-message" > <%= postMessage %> </p>',
     "</div>",
     "<div class = 'button-container'>",
-    '<button type="button" class = "delete-button" name="deleteButton">Delete</button>',
-    '<button type="button" class = "edit-button" name="editButton">Edit</button>',
+    '<button type="button" class = "delete-button btn btn-default" name="deleteButton">Delete</button>',
+    '<button type="button" class = "edit-button btn btn-default" name="editButton">Edit</button>',
     "</div>",
 '</article>',
 ].join(""),
@@ -16,10 +16,10 @@ bitterTmpl: [
 addMessage: [
   '<div class = "add-message-container">',
   '<form class = "">',
-  '<input class = "user-input" type="text" placeholder="Enter Username" value="">',
-  '<input class = "date-input" type="text" placeholder="Enter Date" value="">',
-  '<input class = "post-input" type="text" placeholder="Enter Post" value="">',
-  '<button class = "submit-post-button" value ="Submit">Submit</button>',
+  '<input class = "user-input form-control" type="text" placeholder="Enter Username" value="">',
+  '<input class = "date-input form-control" type="text" placeholder="Enter Date" value="">',
+  '<input class = "post-input form-control" type="text" placeholder="Enter Post" value="">',
+  '<button class = "submit-post-button btn btn-default" value ="Submit">Submit</button>',
   '</form>',
   '</div>'
 ].join(""),
@@ -27,10 +27,10 @@ addMessage: [
 editMessage: [
   '<div class = "edit-message-container">',
   '<form class = "">',
-  '<input class = "user-edit" type="text" placeholder="Enter Username" value="">',
-  '<input class = "date-edit" type="text" placeholder="Enter Date" value="">',
-  '<input class = "post-edit" type="text" placeholder="Enter Post" value="">',
-  '<button class = "submit-edit-button" value ="Submit">Submit</button>',
+  '<input class = "user-edit form-control" type="text" placeholder="Enter Username" value="">',
+  '<input class = "date-edit form-control" type="text" placeholder="Enter Date" value="">',
+  '<input class = "post-edit form-control" type="text" placeholder="Enter Post" value="">',
+  '<button class = "submit-edit-button btn btn-default" value ="Submit">Submit</button>',
   '</form>',
   '</div>'
 ].join("")
