@@ -24,6 +24,7 @@ module.exports = Backbone.View.extend ({
   },
 
   deletePost: function () {
+    event.preventDefault();
     console.log("Delete button is being pressed.");
     this.model.destroy();
   }
